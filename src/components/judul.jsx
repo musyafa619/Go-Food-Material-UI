@@ -19,7 +19,7 @@ function PaperSheet(props) {
     <div align="center">
       <Paper className={classes.root} elevation={1}>
         <Typography variant="h5" component="h3">
-          <strong>Selamat Datang di Go-App</strong>
+          <strong>Welcome to Go-App</strong>
         </Typography>
         <Typography component="p">
           Go-App Siap dibuka di browser dari sabang sampai merauke

@@ -21,7 +21,7 @@ function DenseAppBar(props) {
   const { classes } = props;
   return (
     <div className={classes.root}>
-      <AppBar style={{ backgroundColor: "#2e7d32" }} position="static">
+      <AppBar style={{ backgroundColor: "red" }} position="static">
         <Toolbar variant="dense">
           <IconButton
             className={classes.menuButton}

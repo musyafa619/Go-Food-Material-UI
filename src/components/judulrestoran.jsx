@@ -19,7 +19,7 @@ function PaperSheet(props) {
     <div>
       <Paper className={classes.root} elevation={1}>
         <Typography variant="h5" component="h3">
-          <strong>Selamat Datang di Go-Food</strong>
+          <strong>Welcome to Go-Food</strong>
         </Typography>
         <Typography component="p">
           Bersyukur bisa Makan, Alhamdulillah :)
