@@ -23,17 +23,21 @@ const styles = {
 
 const restorans = [
   {
+    nama: "McDonald",
     gambar: "http://new.hargiyanto.com/wp-content/uploads/2016/10/modmcd.jpg"
   },
   {
+    nama: "KFC",
     gambar:
       "https://infopeluangusaha.org/wp-content/uploads/2016/03/strategi-kfc.jpg"
   },
   {
+    nama: "A & W",
     gambar:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqT2bUXnQRnSl_nNGnJ2xcdkPIzmed_nGmBmdMddoUSvGAJNcijQ"
   },
   {
+    nama: "Pizza Hut",
     gambar:
       "https://cdns.klimg.com/merdeka.com/i/w/news/2013/02/26/156704/670x335/cara-pizza-hut-hadapi-aturan-waralaba-restoran.jpg"
   }
@@ -51,7 +55,7 @@ function MediaCard(props) {
             </CardActionArea>
             <CardActions>
               <Button size="small" color="primary" href="/makanan">
-                McDoland
+                {restoran.nama}
               </Button>
             </CardActions>
           </Card>

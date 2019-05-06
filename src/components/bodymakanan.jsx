@@ -95,7 +95,7 @@ class Bodymakannn extends Component {
   kurangTotalHarga = (harga, item) => {
     this.setState({
       total: this.state.total - harga,
-      daftar: this.state.daftar.filter(l => l.id != item.id)
+      daftar: this.state.daftar.pop(l => l.id != item.id)
     });
     sessionStorage.total = this.state.total - harga;
   };
@@ -120,6 +120,7 @@ class Bodymakannn extends Component {
             color="primary"
             className={classes.button}
             style={{ backgroundColor: "green" }}
+            href="/checkout"
           >
             Check Out
           </Button>
