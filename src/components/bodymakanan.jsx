@@ -9,6 +9,8 @@ import Button from "@material-ui/core/Button";
 import Gomakanan from "./gomakanan";
 import Gomakanan2 from "./gomakanan2";
 import Gomakanan3 from "./gomakanan3";
+import { Link } from "react-router-dom";
+
 const styles = theme => ({
   root: {
     flexGrow: 1
@@ -95,7 +97,7 @@ class Bodymakannn extends Component {
   kurangTotalHarga = (harga, item) => {
     this.setState({
       total: this.state.total - harga,
-      daftar: this.state.daftar.pop(l => l.id != item.id)
+      daftar: this.state.daftar.filter(l => l.id != item.id)
     });
     sessionStorage.total = this.state.total - harga;
   };
@@ -116,11 +118,12 @@ class Bodymakannn extends Component {
           <h3>Rp {this.state.total}</h3>
           <br />
           <Button
+            component={Link}
+            to="/checkout"
             variant="contained"
             color="primary"
             className={classes.button}
             style={{ backgroundColor: "green" }}
-            href="/checkout"
           >
             Check Out
           </Button>

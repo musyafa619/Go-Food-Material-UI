@@ -49,7 +49,12 @@ function MediaCard(props) {
               <CardMedia className={classes.media} image={app.gambar} />
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary" href="/restoran">
+              <Button
+                component={Link}
+                to="/restoran"
+                size="small"
+                color="primary"
+              >
                 Order
               </Button>
             </CardActions>

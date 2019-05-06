@@ -3,6 +3,11 @@ import Button from "@material-ui/core/Button";
 
 export default class Bodycheckout extends Component {
   componentDidMount() {
+    var y = sessionStorage.terpesan;
+    document.getElementById("terpesann").innerHTML = y;
+  }
+
+  componentDidMount() {
     var x = sessionStorage.total;
     document.getElementById("totalHarga").innerHTML = x;
   }
@@ -24,9 +29,10 @@ export default class Bodycheckout extends Component {
           style={{ maxWidth: 300 }}
           src="https://store.pesonaedu.id/media/imgs/troli.png"
         />
-        <h2>Makanan Terpesan</h2>
+        {/* <h2>Makanan Terpesan</h2> */}
 
         <h3>Total Pembayaran</h3>
+        {/* <h3>{sessionStorage.terpesan}</h3> */}
         <h3 id="totalHarga" />
         <br />
         <Button
